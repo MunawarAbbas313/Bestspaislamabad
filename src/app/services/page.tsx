@@ -4,7 +4,6 @@ import { Metadata } from 'next';
 import { FAQSection } from "@/components/ui/accordion";
 import { MapSection } from "@/components/shared/MapSection";
 import { SEOKeywords } from "@/components/shared/SEOKeywords";
-import { motion } from "framer-motion";
 
 export const metadata: Metadata = {
     title: "Our Spa Services in Islamabad",
@@ -138,16 +137,12 @@ export default function ServicesPage() {
             {/* Trust & Safety Section */}
             <section className="py-20 bg-muted/30">
                 <div className="container mx-auto px-4 md:px-6 max-w-4xl">
-                    <motion.div
-                        initial={{ opacity: 0, y: 30 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        className="text-center mb-12"
-                    >
+                    <div className="text-center mb-12">
                         <h2 className="text-3xl md:text-4xl font-bold font-playfair mb-4">Why Trust Our Services</h2>
                         <p className="text-xl text-muted-foreground">
                             Professional, safe, and certified spa treatments you can rely on
                         </p>
-                    </motion.div>
+                    </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div className="bg-white p-6 rounded-2xl shadow-sm border border-emerald-100">
