@@ -3,6 +3,7 @@
   "outputDirectory": ".next",
   "installCommand": "npm install",
   "framework": "nextjs",
+
   "headers": [
     {
       "source": "/(.*)",
@@ -29,6 +30,7 @@
         }
       ]
     },
+
     {
       "source": "/sitemap.xml",
       "headers": [
@@ -38,6 +40,7 @@
         }
       ]
     },
+
     {
       "source": "/robots.txt",
       "headers": [
@@ -47,8 +50,9 @@
         }
       ]
     },
+
     {
-      "source": "/(.*\\.(png|jpg|jpeg|gif|ico|svg|webp))",
+      "source": "/:path*\\.(png|jpg|jpeg|gif|ico|svg|webp)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -56,8 +60,9 @@
         }
       ]
     },
+
     {
-      "source": "/_next/static/(.*)",
+      "source": "/_next/static/:path*",
       "headers": [
         {
           "key": "Cache-Control",
@@ -66,6 +71,7 @@
       ]
     }
   ],
+
   "redirects": [
     {
       "source": "/home",
