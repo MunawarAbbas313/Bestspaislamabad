@@ -2,8 +2,9 @@ import { buttonVariants } from "@/components/ui/button";
 import { Metadata } from 'next';
 import { MapPin, Phone, Mail } from "lucide-react";
 import { MapSection } from "@/components/shared/MapSection";
-import { FAQSection } from "@/components/ui/accordion";
 import { SEOKeywords } from "@/components/shared/SEOKeywords";
+import { FAQSection } from "@/components/ui/accordion";
+import { BookingForm } from "@/components/shared/BookingForm";
 
 export const metadata: Metadata = {
     title: "Contact Best Spa Islamabad",
@@ -91,6 +92,19 @@ export default function ContactPage() {
                             </button>
                         </form>
                     </div>
+                </div>
+
+                {/* Booking Form Section */}
+                <div className="max-w-2xl mx-auto mb-16">
+                    <div className="text-center mb-8">
+                        <h2 className="text-3xl font-bold font-playfair text-emerald-700 mb-4">
+                            Quick WhatsApp Booking
+                        </h2>
+                        <p className="text-muted-foreground">
+                            Fill out the form below and we'll send your booking request directly via WhatsApp for instant confirmation.
+                        </p>
+                    </div>
+                    <BookingForm />
                 </div>
 
                 <div className="max-w-3xl mx-auto mb-16">

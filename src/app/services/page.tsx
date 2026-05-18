@@ -4,6 +4,7 @@ import { Metadata } from 'next';
 import { FAQSection } from "@/components/ui/accordion";
 import { MapSection } from "@/components/shared/MapSection";
 import { SEOKeywords } from "@/components/shared/SEOKeywords";
+import { BookingForm } from "@/components/shared/BookingForm";
 
 export const metadata: Metadata = {
     title: "Our Spa Services in Islamabad",
@@ -200,6 +201,23 @@ export default function ServicesPage() {
                                 Fully licensed by Islamabad Health Department and fully insured for complete peace of mind.
                             </p>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Booking Form Section */}
+            <section className="py-20 bg-muted/30">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-2xl mx-auto">
+                        <div className="text-center mb-8">
+                            <h2 className="text-3xl font-bold font-playfair text-emerald-700 mb-4">
+                                Book Your Massage Session
+                            </h2>
+                            <p className="text-muted-foreground">
+                                Ready to experience our professional spa services? Fill out the form below and we'll send your booking request via WhatsApp for instant confirmation.
+                            </p>
+                        </div>
+                        <BookingForm />
                     </div>
                 </div>
             </section>
