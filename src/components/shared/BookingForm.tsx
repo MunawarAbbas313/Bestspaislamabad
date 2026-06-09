@@ -63,7 +63,7 @@ ${formData.massageType}
 
 📍 *Location:* Best Spa Islamabad, Gulberg Islamabad
 
-📞 *Contact:* 037 17877754
+📞 *Contact:* 03149721395
 
 ---
 *Please confirm this booking and reply with availability.*
