@@ -6,6 +6,7 @@ import { Footer } from "@/components/layout/Footer";
 import { ThemeProvider } from "@/components/theme-provider";
 import { WhatsAppWidget } from "@/components/shared/WhatsAppWidget";
 import { PromoBadge } from "@/components/shared/PromoBadge";
+import { Analytics } from "@vercel/analytics/next";
 
 const poppins = Poppins({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700"], variable: "--font-poppins" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
@@ -38,6 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Footer />
           <WhatsAppWidget />
           <PromoBadge />
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
