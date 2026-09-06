@@ -1,56 +1,57 @@
 import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import { Metadata } from 'next';
+import { MessageCircle, Phone } from "lucide-react";
 import { FAQSection } from "@/components/ui/accordion";
 import { MapSection } from "@/components/shared/MapSection";
 import { SEOKeywords } from "@/components/shared/SEOKeywords";
 import { BookingForm } from "@/components/shared/BookingForm";
 
 export const metadata: Metadata = {
-    title: "Our Spa Services in Islamabad",
-    description: "We offer a wide range of professional spa and massage services in Islamabad designed for relaxation, stress relief, and wellness improvement.",
+    title: "Spa & Massage Services Rawalpindi • Bahria Town | Best Spa",
+    description: "We offer a wide range of professional spa and massage services in Rawalpindi and Bahria Town Phase 7 designed for relaxation, stress relief, and wellness improvement.",
 };
 
 const services = [
     {
         id: "swedish",
-        name: "Full Body Massage Islamabad",
+        name: "Full Body Massage Rawalpindi",
         price: "PKR 5,000",
         duration: "60 Min",
-        description: "Our full body massage service helps reduce stress, improve blood circulation, relax muscles, and refresh your body. Professional massage techniques combined with premium oils create a relaxing spa experience.",
-        image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=2070&auto=format&fit=crop"
+        description: "Our full body massage service in Bahria Town Rawalpindi helps reduce stress, improve blood circulation, relax muscles, and refresh your body. Professional massage techniques combined with premium oils create a relaxing spa experience.",
+        image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=720&auto=format&fit=crop"
     },
     {
         id: "deep-tissue",
-        name: "Deep Tissue Massage Islamabad",
+        name: "Deep Tissue Massage Rawalpindi",
         price: "PKR 6,000",
         duration: "60 Min",
-        description: "Deep tissue massage focuses on muscle pain, stiffness, and tension using advanced therapeutic techniques that help provide long-lasting relief and relaxation.",
-        image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop"
+        description: "Deep tissue massage focuses on muscle pain, stiffness, and tension using advanced therapeutic techniques that help provide long-lasting relief and relaxation in Rawalpindi.",
+        image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=720&auto=format&fit=crop"
     },
     {
         id: "thai",
-        name: "Thai Massage Islamabad",
+        name: "Thai Massage Rawalpindi",
         price: "PKR 5,500",
         duration: "60/90 Min",
-        description: "Experience traditional Thai massage in Islamabad using stretching and pressure point therapy to improve flexibility, release tension, and increase energy levels.",
-        image: "https://images.unsplash.com/photo-1591343395082-e120087004b4?q=80&w=2071&auto=format&fit=crop"
+        description: "Experience traditional Thai massage in Bahria Town Rawalpindi using stretching and pressure point therapy to improve flexibility, release tension, and increase energy levels.",
+        image: "https://images.unsplash.com/photo-1591343395082-e120087004b4?q=80&w=720&auto=format&fit=crop"
     },
     {
         id: "aromatherapy",
-        name: "Aromatherapy Massage",
+        name: "Aromatherapy Massage Rawalpindi",
         price: "PKR 6,500",
         duration: "60 Min",
         description: "Relax your body and mind with aromatherapy massage using natural essential oils that promote stress relief, better sleep, and emotional wellness.",
-        image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=2070&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=720&auto=format&fit=crop"
     },
     {
         id: "hot-stone",
-        name: "Hot Stone Therapy",
+        name: "Hot Stone Therapy Rawalpindi",
         price: "PKR 7,000",
         duration: "75 Min",
-        description: "Smooth, water-heated stones are placed on specific points on the body to promote deep muscle relaxation and melt away stress. Perfect for deep relaxation therapy.",
-        image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=2070&auto=format&fit=crop"
+        description: "Smooth, water-heated stones are placed on specific points on the body to promote deep muscle relaxation and melt away stress. Perfect for deep relaxation therapy in Bahria Town.",
+        image: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=720&auto=format&fit=crop"
     },
     {
         id: "reflexology",
@@ -58,7 +59,7 @@ const services = [
         price: "PKR 3,500",
         duration: "45 Min",
         description: "Application of pressure to specific points on the feet that correspond to organs and systems of the body. Promotes holistic wellness and natural healing.",
-        image: "https://images.unsplash.com/photo-1519415387722-a1c3bbef716c?q=80&w=2070&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1519415387722-a1c3bbef716c?q=80&w=720&auto=format&fit=crop"
     },
     {
         id: "head-shoulder",
@@ -66,15 +67,15 @@ const services = [
         price: "PKR 3,000",
         duration: "30 Min",
         description: "A quick but effective treatment targeting the most common areas of tension. Perfect for a lunch break destress session and immediate stress relief.",
-        image: "https://images.unsplash.com/photo-1537368910025-700350fe46c7?q=80&w=2070&auto=format&fit=crop"
+        image: "https://images.unsplash.com/photo-1537368910025-700350fe46c7?q=80&w=720&auto=format&fit=crop"
     },
     {
         id: "couples",
-        name: "Couples Spa Islamabad",
+        name: "Couples Spa Rawalpindi",
         price: "PKR 12,000",
         duration: "60 Min",
-        description: "Enjoy a luxury couples spa experience in Islamabad with private relaxing massage sessions designed for comfort, peace, and memorable moments together.",
-        image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop"
+        description: "Enjoy a luxury couples spa experience in Bahria Town Rawalpindi with private relaxing massage sessions designed for comfort, peace, and memorable moments together.",
+        image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=720&auto=format&fit=crop"
     }
 ];
 
@@ -95,9 +96,9 @@ export default function ServicesPage() {
             {/* Header */}
             <section className="bg-primary/5 py-20 md:py-32 text-center">
                 <div className="container mx-auto px-4">
-                    <h1 className="text-4xl md:text-6xl font-bold font-playfair mb-6 text-foreground">Our Spa Services in Islamabad</h1>
+                    <h1 className="text-4xl md:text-6xl font-bold font-playfair mb-6 text-foreground">Our Spa Services in Rawalpindi & Bahria Town</h1>
                     <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                        We offer a wide range of professional spa and massage services in Islamabad designed for relaxation, stress relief, and wellness improvement.
+                        We offer a wide range of professional spa and massage services in Rawalpindi and Bahria Town Phase 7 designed for relaxation, stress relief, and wellness improvement.
                     </p>
                     <div className="mt-8 max-w-4xl mx-auto">
                         <p className="text-lg text-muted-foreground leading-relaxed">
@@ -113,9 +114,20 @@ export default function ServicesPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                         {services.map((service) => (
                             <div key={service.id} id={service.id} className="group flex flex-col items-center md:items-start md:flex-row gap-6 bg-card p-6 rounded-3xl border border-border hover:shadow-lg transition-all duration-300">
-                                <div className="w-full md:w-48 h-48 shrink-0 overflow-hidden rounded-2xl">
+                                <a
+                                    href={`https://wa.me/923700802980?text=${encodeURIComponent(`Hello, I want to book the ${service.name} (${service.price}, ${service.duration}) at Best Spa.`)}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-full md:w-48 h-48 shrink-0 overflow-hidden rounded-2xl block relative group cursor-pointer"
+                                    aria-label={`Book ${service.name} on WhatsApp`}
+                                >
                                     <img src={service.image} alt={service.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                                </div>
+                                    <div className="absolute inset-0 bg-black/25 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                        <span className="px-3 py-1 rounded-full bg-emerald-700 text-white font-bold text-[11px] flex items-center gap-1 shadow">
+                                            <MessageCircle className="h-3 w-3" /> WhatsApp
+                                        </span>
+                                    </div>
+                                </a>
                                 <div className="flex-grow space-y-3 text-center md:text-left">
                                     <h2 className="text-2xl font-bold font-playfair text-foreground">{service.name}</h2>
                                     <div className="flex flex-wrap gap-2 justify-center md:justify-start">
@@ -123,9 +135,30 @@ export default function ServicesPage() {
                                         <span className="bg-secondary text-secondary-foreground px-3 py-1 rounded-full text-sm">{service.duration}</span>
                                     </div>
                                     <p className="text-muted-foreground leading-relaxed text-sm">{service.description}</p>
-                                    <div className="pt-2">
-                                        <Link href="/contact" className="text-primary font-medium hover:underline underline-offset-4">
-                                            Book Now &rarr;
+                                    <div className="pt-3 flex flex-wrap gap-2.5">
+                                        <a
+                                            href={`https://wa.me/923700802980?text=${encodeURIComponent(`Hello, I want to book the ${service.name} (${service.price}, ${service.duration}) at Best Spa.`)}`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold transition-all shadow active:scale-95"
+                                            aria-label={`Book ${service.name} on WhatsApp`}
+                                        >
+                                            <MessageCircle className="h-3.5 w-3.5" />
+                                            <span>WhatsApp Book</span>
+                                        </a>
+                                        <a
+                                            href="tel:+923700802980"
+                                            className="inline-flex items-center gap-1.5 px-3 py-2 rounded-full bg-stone-900 hover:bg-stone-800 text-white text-xs font-semibold transition-all"
+                                            aria-label={`Call to book ${service.name}`}
+                                        >
+                                            <Phone className="h-3.5 w-3.5 text-emerald-400" />
+                                            <span>Call</span>
+                                        </a>
+                                        <Link
+                                            href="/book"
+                                            className="inline-flex items-center px-3 py-2 rounded-full border border-border hover:bg-muted text-xs font-medium"
+                                        >
+                                            Book Online
                                         </Link>
                                     </div>
                                 </div>

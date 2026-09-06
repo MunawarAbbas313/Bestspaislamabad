@@ -48,12 +48,13 @@ interface FAQItem {
     answer: string;
 }
 
-export function FAQSection({ items }: { items: FAQItem[] }) {
+export function FAQSection({ items, faqs }: { items?: FAQItem[]; faqs?: FAQItem[] }) {
     const [openIndex, setOpenIndex] = React.useState<number | null>(0);
+    const faqList = items || faqs || [];
 
     return (
         <div className="w-full max-w-3xl mx-auto">
-            {items.map((item, index) => (
+            {faqList.map((item, index) => (
                 <AccordionItem
                     key={index}
                     title={item.question}

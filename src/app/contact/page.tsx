@@ -40,14 +40,14 @@ export default function ContactPage() {
                                 <MapPin className="h-6 w-6 opacity-80 mt-1" />
                                 <div>
                                     <p className="font-bold">Address</p>
-                                    <p className="opacity-90">Gulberg Islamabad, Pakistan</p>
+                                    <p className="opacity-90">Bahria Town Phase 7, Near Nando's & Wallayat Complex, Rawalpindi 46000, Pakistan</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-4">
                                 <Phone className="h-6 w-6 opacity-80 mt-1" />
                                 <div>
                                     <p className="font-bold">Phone / WhatsApp</p>
-                                    <p className="opacity-90">03149721395</p>
+                                    <a href="tel:+923700802980" className="opacity-90 hover:underline">0370 0802980</a>
                                 </div>
                             </div>
                             <div className="flex items-start gap-4">
@@ -59,9 +59,10 @@ export default function ContactPage() {
                             </div>
                         </div>
 
-                        <div className="pt-8 border-t border-primary-foreground/20">
+                        <div className="pt-8 border-t border-primary-foreground/20 space-y-1">
                             <h3 className="font-bold mb-2">Opening Hours</h3>
-                            <p className="opacity-90">Monday - Sunday: 10:00 AM - 10:00 PM</p>
+                            <p className="opacity-90 text-sm">• Monday – Friday: 10:00 AM – 4:40 AM</p>
+                            <p className="opacity-90 text-sm">• Saturday – Sunday: 24 Hours Open</p>
                         </div>
                     </div>
 

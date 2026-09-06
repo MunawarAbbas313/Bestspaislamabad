@@ -23,15 +23,15 @@ const comprehensiveFaqs = [
     },
     {
         question: "Do I need an appointment?",
-        answer: "Appointments are recommended for the best spa experience and availability. While we welcome walk-ins, booking in advance ensures you get your preferred time slot and therapist. You can book by calling 0327 17877754 or through our website."
+        answer: "Appointments are recommended for the best spa experience and availability. While we welcome walk-ins, booking in advance ensures you get your preferred time slot and therapist. You can book by calling 0370 0802980 or through our website."
     },
     {
         question: "What should I wear for my massage therapy session at Best Spa Islamabad?",
         answer: "We recommend wearing loose, comfortable clothing for your professional massage therapy session. For full-body massages including Swedish massage, deep tissue massage, and hot stone therapy, you will be properly draped with premium sheets/towels at all times to ensure your complete privacy, comfort, and relaxation."
     },
     {
-        question: "Do I need to book an appointment for massage therapy in Gulberg Islamabad?",
-        answer: "Yes, we highly recommend booking your massage therapy appointment in advance to ensure availability, especially on weekends and holidays. Our luxury spa in Gulberg Islamabad offers convenient online booking and phone booking at 0327 17877754."
+        question: "Do I need to book an appointment for massage therapy at Best Spa Islamabad?",
+        answer: "Yes, we highly recommend booking your massage therapy appointment in advance to ensure availability, especially on weekends and holidays. Our luxury spa in Bahria Town Phase 7 near Wallayat Complex offers convenient online booking and phone booking at 0370 0802980."
     },
     {
         question: "What if I have a medical condition before my massage treatment?",
@@ -39,7 +39,7 @@ const comprehensiveFaqs = [
     },
     {
         question: "Are there female massage therapists available in Islamabad?",
-        answer: "Yes, we have a team of professional certified male and female massage therapists available at our luxury spa in Gulberg Islamabad. You can request your preferred therapist gender at the time of booking your massage therapy appointment."
+        answer: "Yes, we have a team of professional certified male and female massage therapists available at our luxury spa in Bahria Town Phase 7. You can request your preferred therapist gender at the time of booking your massage therapy appointment."
     },
     {
         question: "How early should I arrive for my spa appointment?",
@@ -59,11 +59,11 @@ const comprehensiveFaqs = [
     },
     {
         question: "Is parking available at your spa location?",
-        answer: "Yes, we have a dedicated parking area for our clients right in front of the spa. Our Gulberg Islamabad location is easily accessible with ample parking space, making your visit convenient and stress-free."
+        answer: "Yes, we have dedicated secure parking right in front of our spa in Bahria Town Phase 7 near Wallayat Complex, Rawalpindi. Our location is easily accessible with ample parking space, making your visit convenient and stress-free."
     },
     {
         question: "What makes Best Spa Islamabad different from other spas?",
-        answer: "Our commitment to excellence sets us apart. We combine certified professional therapists, premium organic products, luxurious facilities, and personalized care to create an unmatched spa experience. Our attention to detail, hygiene standards, and customer satisfaction make us Islamabad's premier wellness destination."
+        answer: "Our commitment to excellence sets us apart. We combine certified professional therapists, premium organic products, luxurious facilities, and personalized care to create an unmatched spa experience. Our attention to detail, hygiene standards, and customer satisfaction make us Islamabad and Rawalpindi's premier wellness destination."
     },
     {
         question: "Do you accept credit cards?",
@@ -78,8 +78,8 @@ const comprehensiveFaqs = [
         answer: "We offer various session lengths including 30, 45, 60, 75, and 90-minute treatments. Session duration depends on the type of service you choose. Popular options like Swedish and deep tissue massages are typically 60 minutes, while specialized treatments may vary."
     },
     {
-        question: "What areas of Islamabad do you serve?",
-        answer: "We welcome clients from all areas of Islamabad including F-10, F-11, DHA, Bahria Town, Blue Area, Gulberg, and surrounding areas. Our convenient Gulberg location makes us easily accessible from throughout Islamabad and Rawalpindi."
+        question: "What areas do you serve?",
+        answer: "We welcome clients from all areas including Bahria Town Phases 1–8, DHA Islamabad, PWD, Gulraiz, Chaklala, Saddar, and throughout Rawalpindi and Islamabad. Our convenient Bahria Town Phase 7 location near Wallayat Complex makes us easily accessible from across the twin cities."
     },
     {
         question: "Do you offer gift certificates?",
@@ -179,8 +179,8 @@ export default function FAQPage() {
                                 </svg>
                             </div>
                             <h3 className="text-lg font-bold mb-2">Call Us</h3>
-                            <p className="text-muted-foreground">0327 17877754</p>
-                            <p className="text-sm text-muted-foreground">Daily: 10AM - 10PM</p>
+                            <a href="tel:+923700802980" className="text-muted-foreground hover:text-foreground font-medium">0370 0802980</a>
+                            <p className="text-sm text-muted-foreground">Mon–Fri: 10AM – 4:40AM | Sat–Sun: 24h</p>
                         </div>
                         
                         <div className="text-center">
@@ -190,7 +190,7 @@ export default function FAQPage() {
                                 </svg>
                             </div>
                             <h3 className="text-lg font-bold mb-2">WhatsApp</h3>
-                            <p className="text-muted-foreground">Chat with us</p>
+                            <a href="/whatsapp" target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:underline font-medium">Chat on WhatsApp</a>
                             <p className="text-sm text-muted-foreground">Instant responses</p>
                         </div>
                         

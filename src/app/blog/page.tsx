@@ -43,8 +43,12 @@ export default function BlogPage() {
                             <p className="text-rose-800/80 mb-6 leading-relaxed">
                                 {featuredPost.excerpt}
                             </p>
-                            <Link href={`/blog/${featuredPost.slug}`} className="flex items-center gap-2 text-rose-700 font-bold hover:text-rose-900 transition-colors">
-                                Read Full Article <ArrowRight className="h-4 w-4" />
+                            <Link
+                                href={`/blog/${featuredPost.slug}`}
+                                aria-label={`Read full article: ${featuredPost.title}`}
+                                className="flex items-center gap-2 text-emerald-800 dark:text-emerald-300 font-bold hover:text-emerald-900 transition-colors"
+                            >
+                                <span>Read Full Article</span> <ArrowRight className="h-4 w-4" />
                             </Link>
                         </div>
                     </div>
@@ -52,22 +56,26 @@ export default function BlogPage() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {blogPosts.slice(1).map((post, i) => (
-                        <article key={i} className="bg-white/40 backdrop-blur-sm rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 p-8 flex flex-col h-full border border-rose-100 hover:border-rose-300 group">
+                        <article key={i} className="bg-card rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 p-8 flex flex-col h-full border border-border group">
                             <div className="flex justify-between items-center mb-4">
-                                <span className="text-xs font-bold text-rose-600 uppercase tracking-wide bg-rose-100 px-2 py-1 rounded-sm">{post.category}</span>
-                                <span className="text-xs text-rose-500">{post.date}</span>
+                                <span className="text-xs font-bold text-emerald-700 dark:text-emerald-400 uppercase tracking-wide bg-emerald-50 dark:bg-emerald-950/60 px-2.5 py-1 rounded-full">{post.category}</span>
+                                <span className="text-xs text-muted-foreground">{post.date}</span>
                             </div>
-                            <h2 className="text-xl font-bold text-rose-950 mb-3 font-playfair group-hover:text-rose-600 transition-colors line-clamp-2">
-                                <Link href={`/blog/${post.slug}`}>
+                            <h2 className="text-xl font-bold text-foreground mb-3 font-playfair group-hover:text-emerald-700 dark:group-hover:text-emerald-400 transition-colors line-clamp-2">
+                                <Link href={`/blog/${post.slug}`} aria-label={`Read article: ${post.title}`}>
                                     {post.title}
                                 </Link>
                             </h2>
-                            <p className="text-rose-900/70 text-sm mb-6 flex-grow leading-relaxed line-clamp-4">
+                            <p className="text-muted-foreground text-sm mb-6 flex-grow leading-relaxed line-clamp-4">
                                 {post.excerpt}
                             </p>
-                            <div className="mt-auto pt-4 border-t border-rose-100">
-                                <Link href={`/blog/${post.slug}`} className="font-semibold text-sm text-rose-700 hover:text-rose-900 transition-colors flex items-center gap-1">
-                                    Read Full Article <ArrowRight className="h-3 w-3" />
+                            <div className="mt-auto pt-4 border-t border-border">
+                                <Link
+                                    href={`/blog/${post.slug}`}
+                                    aria-label={`Read article: ${post.title}`}
+                                    className="font-semibold text-sm text-emerald-700 dark:text-emerald-400 hover:underline transition-colors flex items-center gap-1"
+                                >
+                                    <span>Read Article</span> <ArrowRight className="h-3 w-3" />
                                 </Link>
                             </div>
                         </article>

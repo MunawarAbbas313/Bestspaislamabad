@@ -13,11 +13,11 @@ interface ButtonStyleProps {
 
 export const buttonVariants = ({ variant = "primary", size = "md", className }: ButtonStyleProps) => {
     const variants = {
-        primary: "bg-emerald-600 text-white hover:bg-emerald-700 shadow-md",
-        secondary: "bg-stone-200 text-stone-800 hover:bg-stone-300",
-        outline: "border border-emerald-600 text-emerald-600 hover:bg-emerald-50",
-        ghost: "text-stone-600 hover:bg-stone-100 dark:text-stone-300",
-        link: "text-emerald-600 underline-offset-4 hover:underline",
+        primary: "bg-emerald-700 text-white hover:bg-emerald-800 shadow-md",
+        secondary: "bg-stone-200 text-stone-900 hover:bg-stone-300 dark:bg-stone-800 dark:text-stone-100",
+        outline: "border border-emerald-700 text-emerald-800 dark:text-emerald-300 hover:bg-emerald-50 dark:hover:bg-emerald-950/50",
+        ghost: "text-stone-700 hover:bg-stone-100 dark:text-stone-200",
+        link: "text-emerald-800 dark:text-emerald-400 underline-offset-4 hover:underline font-semibold",
     };
 
     const sizes = {

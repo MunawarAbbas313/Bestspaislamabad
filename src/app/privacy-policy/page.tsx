@@ -20,7 +20,7 @@ export default function PrivacyPolicy() {
                     <section>
                         <h2 className="text-2xl font-bold text-foreground font-playfair mb-4">Introduction</h2>
                         <p className="leading-relaxed">
-                            At Best Spa Islamabad, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy outlines how we collect, use, store, and protect your data when you visit our website, book appointments, or use our spa services in Gulberg Islamabad.
+                            At Best Spa Islamabad, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy outlines how we collect, use, store, and protect your data when you visit our website, book appointments, or use our spa services in Bahria Town Phase 7, Rawalpindi.
                         </p>
                     </section>
 
@@ -123,10 +123,10 @@ export default function PrivacyPolicy() {
                         <p className="leading-relaxed">
                             If you have questions about this Privacy Policy or need to exercise your rights, please contact us:
                         </p>
-                        <div className="bg-muted p-6 rounded-2xl mt-4">
+                        <div className="bg-muted p-6 rounded-2xl mt-4 space-y-1 text-sm">
                             <p><strong>Best Spa Islamabad</strong></p>
-                            <p>📍 Gulberg Islamabad, Pakistan</p>
-                            <p>📞 0327 17877754</p>
+                            <p>📍 Bahria Town Phase 7, Near Nando's & Wallayat Complex, Rawalpindi 46000, Pakistan</p>
+                            <p>📞 0370 0802980</p>
                             <p>📧 info@bestspaislamabad.com</p>
                         </div>
                     </section>

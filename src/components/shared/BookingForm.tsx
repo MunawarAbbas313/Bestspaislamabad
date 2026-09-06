@@ -61,9 +61,9 @@ export function BookingForm() {
 💆‍♀️ *Service Requested:*
 ${formData.massageType}
 
-📍 *Location:* Best Spa Islamabad, Gulberg Islamabad
+📍 *Location:* Best Spa Islamabad, Bahria Town Phase 7, Near Nando's & Wallayat Complex
 
-📞 *Contact:* 03149721395
+📞 *Contact:* 0370 0802980
 
 ---
 *Please confirm this booking and reply with availability.*
@@ -82,7 +82,7 @@ ${formData.massageType}
 
     setIsSubmitting(true);
     
-    const whatsappNumber = "923271787754"; // Pakistan country code + number without 0
+    const whatsappNumber = "923700802980"; // Pakistan country code + number without 0
     const message = formatWhatsAppMessage();
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
     
